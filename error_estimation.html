@@ -8,33 +8,31 @@
 
   
   <!-- Licensed under the Apache 2.0 License -->
-  <link rel="stylesheet" type="text/css" href="../_static/fonts/open-sans/stylesheet.css" />
+  <link rel="stylesheet" type="text/css" href="_static/fonts/open-sans/stylesheet.css" />
   <!-- Licensed under the SIL Open Font License -->
-  <link rel="stylesheet" type="text/css" href="../_static/fonts/source-serif-pro/source-serif-pro.css" />
-  <link rel="stylesheet" type="text/css" href="../_static/css/bootstrap.min.css" />
-  <link rel="stylesheet" type="text/css" href="../_static/css/bootstrap-theme.min.css" />
+  <link rel="stylesheet" type="text/css" href="_static/fonts/source-serif-pro/source-serif-pro.css" />
+  <link rel="stylesheet" type="text/css" href="_static/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="_static/css/bootstrap-theme.min.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-    <title>Symmetries in Bell nonlocality, part 3 &#8212; RepLAB-Quantum 0.1.0 documentation</title>
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/guzzle.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css" />
+    <title>Error estimation in RepLAB &#8212; RepLAB-Apps 0.1.0 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/guzzle.css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/custom.css" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "document", "processHtmlClass": "math|output_area"}}</script>
-    <script src="../_static/js/collapse_helper.js"></script>
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Symmetric NPA relaxations" href="npa.html" />
-    <link rel="prev" title="Symmetries in Bell nonlocality, part 2" href="bell2.html" /> 
+    <script src="_static/js/collapse_helper.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
   
    
   
@@ -68,17 +66,10 @@
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="../genindex.html" title="General Index"
+          <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
-        <li class="right" >
-          <a href="npa.html" title="Symmetric NPA relaxations"
-             accesskey="N">next</a> |</li>
-        <li class="right" >
-          <a href="bell2.html" title="Symmetries in Bell nonlocality, part 2"
-             accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">RepLAB-Quantum 0.1.0 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Nonlocality</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href="">Symmetries in Bell nonlocality, part 3</a></li> 
+        <li class="nav-item nav-item-0"><a href="index.html">RepLAB-Apps 0.1.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Error estimation in RepLAB</a></li> 
       </ul>
     </div>
     <div class="container-wrapper">
@@ -89,20 +80,15 @@
   <div id="left-column">
     <div class="sphinxsidebar"><div class="text-logo">
   <a href="
-    ../index.html">RepLAB-Quantum</a>&nbsp;&nbsp;
+    index.html">RepLAB-Apps</a>&nbsp;&nbsp;
   <a href="https://github.com/replab/quantum"><i class="fab fa-github"></i></a>&nbsp;
 </div><div class="sidebar-block">
   <div class="sidebar-toc">
     
     
-      <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">Nonlocality</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="bell1.html">Symmetries in Bell nonlocality, part 1</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bell2.html">Symmetries in Bell nonlocality, part 2</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Symmetries in Bell nonlocality, part 3</a></li>
-<li class="toctree-l2"><a class="reference internal" href="npa.html">Symmetric NPA relaxations</a></li>
-</ul>
-</li>
+      <ul>
+<li class="toctree-l1"><a class="reference internal" href="membrane/index.html">Membrane vibration modes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SDP.html">Symmetric SDPs</a></li>
 </ul>
 
     
@@ -115,11 +101,9 @@
           
           <div role="navigation" aria-label="breadcrumbs navigation">
             <ol class="breadcrumb">
-              <li><a href="../index.html">Docs</a></li>
+              <li><a href="index.html">Docs</a></li>
               
-                <li><a href="index.html">Nonlocality</a></li>
-              
-              <li>Symmetries in Bell nonlocality, part 3</li>
+              <li>Error estimation in RepLAB</li>
             </ol>
           </div>
           
@@ -372,21 +356,16 @@ div.rendered_html tbody tr:hover {
   background: rgba(66, 165, 245, 0.2);
 }
 </style>
-<section id="Symmetries-in-Bell-nonlocality,-part-3">
-<h1>Symmetries in Bell nonlocality, part 3<a class="headerlink" href="#Symmetries-in-Bell-nonlocality,-part-3" title="Permalink to this headline">¶</a></h1>
-<p>Let us now turn our attention to the symmetries of the full scenario. We first recall the definitions of part 1.</p>
+<section id="Error-estimation-in-RepLAB">
+<h1>Error estimation in RepLAB<a class="headerlink" href="#Error-estimation-in-RepLAB" title="Permalink to this headline">¶</a></h1>
+<p>Before explaining things, we initialize the library</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
 </pre></div>
 </div>
 <div class="input_area highlight-octave notranslate"><div class="highlight"><pre>
-<span></span><span class="nb">addpath</span><span class="p">([</span><span class="nb">pwd</span><span class="p">,</span> <span class="s">&#39;/../../external/replab&#39;</span><span class="p">]);</span>
+<span></span><span class="nb">addpath</span><span class="p">([</span><span class="nb">pwd</span><span class="p">,</span> <span class="s">&#39;/../external/replab&#39;</span><span class="p">]);</span>
 <span class="n">replab_init</span><span class="p">(</span><span class="s">&#39;verbose&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
-<span class="n">outputGroup</span> <span class="p">=</span> <span class="n">replab</span><span class="p">.</span><span class="n">S</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
-<span class="n">outputRep</span> <span class="p">=</span> <span class="n">outputGroup</span><span class="p">.</span><span class="n">naturalRep</span><span class="p">;</span>
-<span class="n">inputGroup</span> <span class="p">=</span> <span class="n">replab</span><span class="p">.</span><span class="n">S</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
-<span class="n">ioGroup</span> <span class="p">=</span> <span class="n">inputGroup</span><span class="p">.</span><span class="n">wreathProduct</span><span class="p">(</span><span class="n">outputGroup</span><span class="p">);</span>
-<span class="n">ioRep</span> <span class="p">=</span> <span class="n">ioGroup</span><span class="p">.</span><span class="n">imprimitiveRep</span><span class="p">(</span><span class="n">outputRep</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
@@ -395,22 +374,30 @@ div.rendered_html tbody tr:hover {
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-warning: addpath: /github/workspace/generated/sphinx/nonlocality/../../external/replab: No such file or directory
+warning: addpath: /github/workspace/generated/sphinx/../external/replab: No such file or directory
 error: &#39;replab_init&#39; undefined near line 1, column 1
-error: &#39;replab&#39; undefined near line 1, column 1
-error: &#39;outputGroup&#39; undefined near line 1, column 1
-error: &#39;replab&#39; undefined near line 1, column 1
-error: &#39;inputGroup&#39; undefined near line 1, column 1
-error: &#39;ioGroup&#39; undefined near line 1, column 1
 </pre></div></div>
 </div>
-<p>The same story repeats for relabelings of parties: the scenario involves two homogeneous parties. We thus have two copies of the group relabeling inputs and/or outputs (one for Alice, one for Bob), and a copy of <span class="math notranslate nohighlight">\(S_2\)</span> that permutes the parties. This group desribing all possible relabellings in this scenario is thus given by:</p>
+<p>Error estimation will play a central role in RepLAB. Currently, tolerances are baked-in in the representation decomposition algorithms, but we will remove those “magic constants” in the next RepLAB releases, to be replaced by proper error estimation.</p>
+<p>Currently, we estimate the error when computing generic samples from equivariant spaces, but the subsequent algorithms do not yet use this estimation in their proceeds.</p>
+<p>We distinguish equivariant spaces over finite groups and compact groups, as for finite groups, a deterministic method is used, while compact groups use an iterative Monte Carlo integration method.</p>
+<section id="For-representations-over-finite-groups">
+<h2>For representations over finite groups<a class="headerlink" href="#For-representations-over-finite-groups" title="Permalink to this headline">¶</a></h2>
+<p>Currently, the main use case of RepLAB is to decompose (signed) permutation representations, that is representations whose matrix forms can be represented exactly in floating point arithmetic (such is the case of matrices with coefficients in <span class="math notranslate nohighlight">\(\{−1, 0, 1\}\)</span> ).</p>
+<p>We did not study in depth the resulting numerical error, but assume (for now) that the error on the coefficients is within <code class="docutils literal notranslate"><span class="pre">2*eps(coeff)</span></code>, where <code class="docutils literal notranslate"><span class="pre">eps(coeff)</span></code> represents the distance to the neighboring floating point number. A rough estimate of the Frobenius error on a resulting matrix <code class="docutils literal notranslate"><span class="pre">X</span></code> with that error model is</p>
+<p><code class="docutils literal notranslate"><span class="pre">norm(X,</span> <span class="pre">'fro')</span> <span class="pre">*</span> <span class="pre">sqrt(size(X,</span> <span class="pre">1)</span> <span class="pre">*</span> <span class="pre">size(X,</span> <span class="pre">2))</span> <span class="pre">*</span> <span class="pre">5e-16</span></code></p>
+</section>
+<section id="For-representations-over-compact-groups">
+<h2>For representations over compact groups<a class="headerlink" href="#For-representations-over-compact-groups" title="Permalink to this headline">¶</a></h2>
+<p>We’ll explain our process on the representation <span class="math notranslate nohighlight">\(U \otimes U \otimes U\)</span> where <span class="math notranslate nohighlight">\(U\)</span> is the unitary group of dimension 3.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
 <div class="input_area highlight-octave notranslate"><div class="highlight"><pre>
-<span></span><span class="n">scenarioGroup</span> <span class="p">=</span> <span class="n">outputGroup</span><span class="p">.</span><span class="n">wreathProduct</span><span class="p">(</span><span class="n">ioGroup</span><span class="p">);</span>
+<span></span><span class="c">%replab.equi.plotConvergence(true);</span>
+<span class="n">U3</span> <span class="p">=</span> <span class="n">replab</span><span class="p">.</span><span class="n">U</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>
+<span class="n">rep</span> <span class="p">=</span> <span class="n">U3</span><span class="p">.</span><span class="n">definingRep</span><span class="p">.</span><span class="n">tensorPower</span><span class="p">(</span><span class="mi">3</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
@@ -419,15 +406,36 @@ error: &#39;ioGroup&#39; undefined near line 1, column 1
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-error: &#39;outputGroup&#39; undefined near line 1, column 1
+error: &#39;replab&#39; undefined near line 1, column 1
+error: &#39;U3&#39; undefined near line 1, column 1
 </pre></div></div>
 </div>
+<p>To decompose that representation, we need to take generic samples from the commutant algebra. This is achieved by projecting a random matrix on the invariant subspace using an iterative algorithm. <span class="math notranslate nohighlight">\(X_0\)</span> is that random initial matrix, and then our iteration is:</p>
+<div class="math notranslate nohighlight">
+\[X_{i+1} = \frac{1}{2N} \sum_{j=1}^N \rho_{s_j} X_i \rho_{s_j}^\dagger + \rho_{s_j}^\dagger X_i \rho_{s_j}\]</div>
+<p>where <span class="math notranslate nohighlight">\(\{ s_j \}\)</span> are sampled from the Haar measure of the group. In our implementation, <span class="math notranslate nohighlight">\(N = 3\)</span>. The iteration eventually converges (proof of convergence, etc…, will be made in future work).</p>
+<p>To control convergence, we do the following. We compute</p>
+<div class="math notranslate nohighlight">
+\[\Delta_i = || X_{i+1} - X_i ||_\text{FRO}\]</div>
+<p>where <span class="math notranslate nohighlight">\(|| \cdot ||_\text{FRO}\)</span> is the Frobenius norm, and fit the following function</p>
+<div class="math notranslate nohighlight">
+\[f(i) = \nu + \alpha \exp (-\beta i )\]</div>
+<p>to our estimates. Note that we perform the fitting by minimizing the square distance of <span class="math notranslate nohighlight">\(\log_{10} f(i)\)</span> to <span class="math notranslate nohighlight">\(\log_{10} \Delta_i\)</span>, and that we implement a variant of <span class="math notranslate nohighlight">\(f(i)\)</span> with the same expressiveness that performs numerically better. The value <span class="math notranslate nohighlight">\(\nu\)</span> represents the noise floor due to floating point approximations. We can compute the crossing point <span class="math notranslate nohighlight">\(\xi = \frac{\ln \alpha - \ln \nu}{\beta}\)</span>, where the magnitude of the approximation error <span class="math notranslate nohighlight">\(\alpha \exp(-\beta i)\)</span>
+becomes comparable to the noise floor <span class="math notranslate nohighlight">\(\nu\)</span>.</p>
+<p>Our convergence criteria is as follows:</p>
+<ul class="simple">
+<li><p>At least 20 iterations should be performed.</p></li>
+<li><p>The noise level should be estimated with sufficient accuracy: 3 standard deviations should be less with 1 order of magnitude.</p></li>
+<li><p>We can make sense of the computed crossing point <span class="math notranslate nohighlight">\(\xi\)</span>. For this we require that 3 standard deviations of relative uncertainty on <span class="math notranslate nohighlight">\(\ln \nu\)</span>, <span class="math notranslate nohighlight">\(\beta\)</span> and <span class="math notranslate nohighlight">\(\xi\)</span> should be less than <span class="math notranslate nohighlight">\(1/10\)</span>.</p></li>
+<li><p>The crossing point was clearly exceeded. Concretely, we check that the number of iterations is at least <span class="math notranslate nohighlight">\(i \ge \max(\xi + 10, \xi_5)\)</span>, where <span class="math notranslate nohighlight">\(\xi_5=\frac{\ln \alpha - \ln \nu'}{\beta}\)</span>, <span class="math notranslate nohighlight">\(\ln\nu' = \ln\nu + 5\text{std}(\{R_i\}_i)\)</span> and <span class="math notranslate nohighlight">\(R_i=\Delta_i-f(i)\)</span> are the fit residuals.</p></li>
+</ul>
+<p>We then return <span class="math notranslate nohighlight">\(\\max(\\Delta_{i-10}, \\ldots, \\Delta_i)\)</span> as an error estimate.</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
 <div class="input_area highlight-octave notranslate"><div class="highlight"><pre>
-<span></span><span class="n">scenarioGroup</span><span class="p">.</span><span class="n">sample</span>
+<span></span><span class="n">rep</span><span class="p">.</span><span class="n">commutant</span><span class="p">.</span><span class="n">sample</span><span class="p">;</span>
 </pre></div>
 </div>
 </div>
@@ -436,73 +444,10 @@ error: &#39;outputGroup&#39; undefined near line 1, column 1
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-error: &#39;scenarioGroup&#39; undefined near line 1, column 1
+error: &#39;rep&#39; undefined near line 1, column 1
 </pre></div></div>
 </div>
-<p>The representation on the behavior <span class="math notranslate nohighlight">\(P(ab|xy)\)</span> is however a primitive representation, as <span class="math notranslate nohighlight">\(P(a|x; b|y)\)</span> ressembles a tensor. Inside each party, we use the imprimitive representation constructed before.</p>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
-</pre></div>
-</div>
-<div class="input_area highlight-octave notranslate"><div class="highlight"><pre>
-<span></span><span class="n">probRep</span> <span class="p">=</span> <span class="n">scenarioGroup</span><span class="p">.</span><span class="n">primitiveRep</span><span class="p">(</span><span class="n">ioRep</span><span class="p">);</span>
-</pre></div>
-</div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<div class="highlight"><pre>
-error: &#39;scenarioGroup&#39; undefined near line 1, column 1
-</pre></div></div>
-</div>
-<p>Decomposition of the full probability space</p>
-<p>We can now compute the decomposition of this representation on <span class="math notranslate nohighlight">\(P(ab|xy)\)</span>:</p>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
-</pre></div>
-</div>
-<div class="input_area highlight-octave notranslate"><div class="highlight"><pre>
-<span></span><span class="n">dec</span> <span class="p">=</span> <span class="n">probRep</span><span class="p">.</span><span class="n">decomposition</span>
-</pre></div>
-</div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<div class="highlight"><pre>
-error: &#39;probRep&#39; undefined near line 1, column 1
-</pre></div></div>
-</div>
-<p>There are 6 irreducible components</p>
-<div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
-</pre></div>
-</div>
-<div class="input_area highlight-octave notranslate"><div class="highlight"><pre>
-<span></span><span class="n">dec</span><span class="p">.</span><span class="n">nComponents</span>
-</pre></div>
-</div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<div class="highlight"><pre>
-error: &#39;dec&#39; undefined near line 1, column 1
-</pre></div></div>
-</div>
-<p>These components correspond to the following physical elements ( see <a class="reference external" href="https://arxiv.org/abs/1610.01833">arXiv:1610.01833</a> ) for more details:</p>
-<ul class="simple">
-<li><p>The global normalization of probabilities</p></li>
-<li><p>The difference of normalization between <span class="math notranslate nohighlight">\(x=y\)</span> and <span class="math notranslate nohighlight">\(x\ne y\)</span></p></li>
-<li><p>The difference of normalization between <span class="math notranslate nohighlight">\(x=0\)</span> and <span class="math notranslate nohighlight">\(x=1\)</span></p></li>
-<li><p>The signaling between Alice and Bob</p></li>
-<li><p>The marginal probabilities of Alice and Bob</p></li>
-<li><p>The correlation between Alice and Bob</p></li>
-</ul>
+</section>
 </section>
 
 <div class="section">
@@ -511,18 +456,6 @@ error: &#39;dec&#39; undefined near line 1, column 1
 
           </div>
             
-  <div class="footer-relations">
-    
-      <div class="pull-left">
-        <a class="btn btn-default" href="bell2.html" title="previous chapter (use the left arrow)">Symmetries in Bell nonlocality, part 2</a>
-      </div>
-    
-      <div class="pull-right">
-        <a class="btn btn-default" href="npa.html" title="next chapter (use the right arrow)">Symmetric NPA relaxations</a>
-      </div>
-    </div>
-    <div class="clearer"></div>
-  
         </div>
         <div class="clearfix"></div>
     </div>
@@ -530,17 +463,10 @@ error: &#39;dec&#39; undefined near line 1, column 1
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="../genindex.html" title="General Index"
+          <a href="genindex.html" title="General Index"
              >index</a></li>
-        <li class="right" >
-          <a href="npa.html" title="Symmetric NPA relaxations"
-             >next</a> |</li>
-        <li class="right" >
-          <a href="bell2.html" title="Symmetries in Bell nonlocality, part 2"
-             >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">RepLAB-Quantum 0.1.0 documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="index.html" >Nonlocality</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href="">Symmetries in Bell nonlocality, part 3</a></li> 
+        <li class="nav-item nav-item-0"><a href="index.html">RepLAB-Apps 0.1.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Error estimation in RepLAB</a></li> 
       </ul>
     </div>
 <script type="text/javascript">
@@ -548,7 +474,7 @@ error: &#39;dec&#39; undefined near line 1, column 1
     $("#left-column").toggle();
   });
 </script>
-<script type="text/javascript" src="../_static/js/bootstrap.js"></script>
+<script type="text/javascript" src="_static/js/bootstrap.js"></script>
   <div class="footer">
     &copy; Copyright 2018-2021, Denis Rosset, Jean-Daniel Bancal and collaborators. Created using <a href="http://sphinx.pocoo.org/">Sphinx</a>.
   </div>

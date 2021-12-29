@@ -1,24 +1,22 @@
+Topic guides
+============
+
+This section explains and analyses some key concepts that appear in
+**RepLAB**. The aim of the guides given here is not to show how to do
+something specific with the library, but rather to explain some notions
+at the heart of **RepLAB** and how the library works.
+
 .. toctree::
-   :maxdepth: 1
-   :hidden:
+   :maxdepth: 2
 
-   nonlocality/index
+   membrane/index
+   SDP
 
-Welcome to RepLAB-Quantum!
-==========================
+.. rubric:: Scientific articles
 
-This website showcases various applications of `RepLAB <https://replab.github.io/replab>`_ in the Quantum Information domain. Choose a topic to explore on the left-side menu.
+To go further, here are some books and articles presenting in more depth additional topics.
 
-
-Contributors
-------------
-
-These special topic guides on RepLAB were initiated by `Denis Rosset <https://github.com/denisrosset>`_ and
-`Jean-Daniel Bancal <https://github.com/jdbancal>`_.
-
-Feedback and suggestions are always welcome. We ask participants to follow the guidelines of the `Typelevel Code of Conduct <https://typelevel.org/conduct.html>`_.
-
-License
--------
-
-RepLAB-Quantum is (C) 2018-2021 Denis Rosset, Jean-Daniel Bancal and other collaborators, and licensed under the `Mozilla Public License 2.0 <https://github.com/replab/replab/LICENSE>`_.
+- `"RepLAB: a computational/numerical approach to representation theory" <https://arxiv.org/abs/1911.09154>`_
+  presents a concise overview of the approach used by **RepLAB**
+- `"Certifying Numerical Decompositions of Compact Group Representations" <https://arxiv.org/abs/2101.12244>`_ presents how **RepLAB**'s numerical decompositions can be certified
+- An introduction to representation theory: `Linear Representations of Finite Groups <https://link.springer.com/book/10.1007/978-1-4684-9458-7>`_ by Jean-Pierre Serre

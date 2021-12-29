@@ -6,12 +6,12 @@
 % ## Preparation
 % As always, before using *RepLAB* commands, initialize the library:
 
-addpath([pwd, '/../external/replab']);
+addpath([pwd, '/../../external/replab']);
 replab_init('verbose', 0);
 
 % Commands in this document makes use ot the YALMIP interface to solve
 % convex optimization problems, see
-% <../installation.html installation instructions>.
+% [installation instructions](https://replab.github.io/web/tutorials/installation.html).
 
 
 % ## Introduction

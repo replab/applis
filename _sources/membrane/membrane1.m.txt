@@ -22,7 +22,7 @@
 % ## Preparation
 % As always, before using *RepLAB* commands, initialize the library:
 
-addpath([pwd, '/../../external/replab']);
+addpath([pwd, '/../../../external/replab']);
 replab_init('verbose', 0);
 
 % ## Introduction

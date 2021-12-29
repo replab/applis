@@ -34,3 +34,10 @@
     color: #000;
 }
 
+.website-part {
+    font-weight: normal;
+}
+
+.website-part-current {
+    font-weight: bold;
+}

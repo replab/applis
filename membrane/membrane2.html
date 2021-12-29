@@ -15,7 +15,7 @@
   <link rel="stylesheet" type="text/css" href="../_static/css/bootstrap-theme.min.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-    <title>Eigenvalue problem of a vibrating square membrane, part 2 &#8212; RepLAB-Apps 0.1.0 documentation</title>
+    <title>Eigenvalue problem of a vibrating square membrane, part 2 &#8212; RepLAB Applications</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="../_static/guzzle.css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
@@ -34,34 +34,9 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Symmetric SDPs" href="../SDP.html" />
-    <link rel="prev" title="Eigenvalue problem of a vibrating square membrane, part 1" href="membrane1.html" /> 
+    <link rel="prev" title="Eigenvalue problem of a vibrating square membrane, part 1" href="membrane1.html" />
   
    
-  
-<style type="text/css">
-  ul.ablog-archive {
-    list-style: none;
-    overflow: auto;
-    margin-left: 0px;
-  }
-  ul.ablog-archive li {
-    float: left;
-    margin-right: 5px;
-    font-size: 80%;
-  }
-  ul.postlist a {
-    font-style: italic;
-  }
-  ul.postlist-style-disc {
-    list-style-type: disc;
-  }
-  ul.postlist-style-none {
-    list-style-type: none;
-  }
-  ul.postlist-style-circle {
-    list-style-type: circle;
-  }
-</style>
 
   </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
@@ -76,7 +51,7 @@
         <li class="right" >
           <a href="membrane1.html" title="Eigenvalue problem of a vibrating square membrane, part 1"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">RepLAB-Apps 0.1.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">RepLAB Applications</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">Membrane vibration modes</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Eigenvalue problem of a vibrating square membrane, part 2</a></li> 
       </ul>
@@ -89,18 +64,16 @@
   <div id="left-column">
     <div class="sphinxsidebar"><div class="text-logo">
   <a href="
-    ../index.html">RepLAB-Apps</a>&nbsp;&nbsp;
+    ../index.html">RepLAB Applications</a>&nbsp;&nbsp;
   <a href="https://github.com/replab/apps"><i class="fab fa-github"></i></a>&nbsp;
   <br>
   <a class="website-part" href="https://replab.github.io"><img src="../_static/img/logo48.png" width="24" height="24" /></a>
   &nbsp;
   <a class="website-part" href="https://replab.github.io/book">Book</a>
   &nbsp;
-  <a class="website-current" href="https://replab.github.io/apps">Apps</a>
+  <a class="website-current" href="https://replab.github.io/apps">Applis</a>
   &nbsp;
   <a class="website-part" href="https://replab.github.io/api">API</a>
-  &nbsp;
-  <a class="website-part" href="https://replab.github.io/blog">Blog</a>
 </div><div class="sidebar-block">
   <div class="sidebar-toc">
     
@@ -139,7 +112,8 @@
 </div>
 
           <div class="document clearer body">
-             
+            
+  
 <style>
 /* CSS for nbsphinx extension */
 
@@ -463,25 +437,25 @@ M_block =
 
  Columns 1 through 8:
 
-   4.0000  -1.0000        0        0        0        0        0  -0.0000
-  -4.0000   4.0000  -2.0000  -0.0000  -0.0000   0.0000   0.0000   0.0000
-        0  -2.0000   4.0000  -0.0000   0.0000   0.0000   0.0000  -0.0000
-        0        0        0   4.0000        0   0.0000   0.0000   0.0000
-        0        0        0        0   4.0000   0.0000   0.0000   0.0000
-        0        0        0        0        0   4.0000  -0.0000   1.4142
-        0   0.0000  -0.0000   0.0000   0.0000  -0.0000   4.0000   0.0000
-        0        0        0        0        0   1.4142        0   4.0000
-  -0.0000   0.0000        0        0   0.0000  -0.0000   1.4142  -0.0000
+   4.0000  -1.0000        0        0        0        0        0   0.0000
+  -4.0000   4.0000  -2.0000        0   0.0000  -0.0000  -0.0000  -0.0000
+        0  -2.0000   4.0000        0        0  -0.0000  -0.0000   0.0000
+        0   0.0000  -0.0000   4.0000        0  -0.0000   0.0000  -0.0000
+        0        0        0        0   4.0000  -0.0000   0.0000  -0.0000
+        0        0        0        0        0   4.0000  -0.0000  -1.4142
+        0        0        0        0        0  -0.0000   4.0000  -0.0000
+   0.0000  -0.0000        0        0  -0.0000  -1.4142   0.0000   4.0000
+        0        0        0        0        0   0.0000  -1.4142   0.0000
 
  Column 9:
 
    0.0000
    0.0000
    0.0000
+  -0.0000
    0.0000
-  -0.0000
-  -0.0000
-   1.4142
+   0.0000
+  -1.4142
    0.0000
    4.0000
 
@@ -519,10 +493,10 @@ that we labelled our basis vectors.</p>
 <div class="highlight"><pre>
 ans =
 
-   4.0000  -0.0000   1.4142  -0.0000
-  -0.0000   4.0000   0.0000   1.4142
-   1.4142        0   4.0000   0.0000
-  -0.0000   1.4142  -0.0000   4.0000
+   4.0000e+00  -3.3307e-16  -1.4142e+00   8.6620e-17
+  -2.2204e-16   4.0000e+00  -3.5305e-17  -1.4142e+00
+  -1.4142e+00   5.5511e-17   4.0000e+00   6.2457e-17
+   1.8164e-16  -1.4142e+00   1.4808e-32   4.0000e+00
 
 </pre></div></div>
 </div>
@@ -543,10 +517,10 @@ ans =
 <div class="highlight"><pre>
 M_block_Iso4 =
 
-   4.0000   1.4142  -0.0000  -0.0000
-   1.4142   4.0000        0   0.0000
-  -0.0000   0.0000   4.0000   1.4142
-  -0.0000  -0.0000   1.4142   4.0000
+   4.0000e+00  -1.4142e+00  -3.3307e-16   8.6620e-17
+  -1.4142e+00   4.0000e+00   5.5511e-17   6.2457e-17
+  -2.2204e-16  -3.5305e-17   4.0000e+00  -1.4142e+00
+   1.8164e-16   1.4808e-32  -1.4142e+00   4.0000e+00
 
 </pre></div></div>
 </div>
@@ -674,17 +648,17 @@ E3 = 4
 <div class="highlight"><pre>
 Block4 =
 
-   4.0000   1.4142  -0.0000  -0.0000
-   1.4142   4.0000        0   0.0000
-  -0.0000   0.0000   4.0000   1.4142
-  -0.0000  -0.0000   1.4142   4.0000
+   4.0000e+00  -1.4142e+00  -3.3307e-16   8.6620e-17
+  -1.4142e+00   4.0000e+00   5.5511e-17   6.2457e-17
+  -2.2204e-16  -3.5305e-17   4.0000e+00  -1.4142e+00
+   1.8164e-16   1.4808e-32  -1.4142e+00   4.0000e+00
 
 U4 =
 
-   7.0711e-01   7.0711e-01  -7.7473e-02  -1.0894e-01
-   7.0711e-01  -7.0711e-01  -7.7473e-02   1.0894e-01
-  -1.1102e-16   1.1102e-16  -7.0285e-01  -6.9866e-01
-  -9.4763e-17   9.4763e-17  -7.0285e-01   6.9866e-01
+   7.0711e-01  -7.0711e-01  -5.4602e-02   7.8624e-02
+  -7.0711e-01  -7.0711e-01   5.4602e-02   7.8624e-02
+  -1.1102e-16  -1.1102e-16  -7.0500e-01   7.0272e-01
+   9.0818e-17   9.0818e-17   7.0500e-01   7.0272e-01
 
 E4 =
 
@@ -810,9 +784,6 @@ decided to use only 9 lattice points and focus on making clear how a block-diago
 </section>
 </section>
 
-<div class="section">
-   
-</div>
 
           </div>
 
@@ -831,7 +802,7 @@ decided to use only 9 lattice points and focus on making clear how a block-diago
         <li class="right" >
           <a href="membrane1.html" title="Eigenvalue problem of a vibrating square membrane, part 1"
              >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="../index.html">RepLAB-Apps 0.1.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">RepLAB Applications</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="index.html" >Membrane vibration modes</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Eigenvalue problem of a vibrating square membrane, part 2</a></li> 
       </ul>

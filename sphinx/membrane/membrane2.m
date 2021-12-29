@@ -15,7 +15,7 @@
 
 % # Eigenvalue problem of a vibrating square membrane, part 2
 
-addpath([pwd, '/../../external/replab']);
+addpath([pwd, '/../../../external/replab']);
 replab_init('verbose', 0);
 g1 = [9 6 3 8 5 2 7 4 1];
 g2 = [3 2 1 6 5 4 9 8 7];

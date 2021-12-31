@@ -12,9 +12,11 @@ at the heart of **RepLAB** and how the library works.
    membrane/index
    SDP
 
-.. rubric:: Scientific articles
+.. rubric:: To go further
 
-To go further, here are some books and articles presenting in more depth additional topics.
+Specific usages of **RepLAB** in the field of quantum theory and quantum information are presented in the dedicated `Quantum <https://replab.github.io/quantum>`_ website.
+
+Here are also some books and scientific articles presenting in more depth additional topics.
 
 - `"RepLAB: a computational/numerical approach to representation theory" <https://arxiv.org/abs/1911.09154>`_
   presents a concise overview of the approach used by **RepLAB**

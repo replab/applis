@@ -11,13 +11,13 @@ from pathlib import Path
 ## Project data
 ##
 
-project = 'replab-apps'
+project = 'replab-applis'
 copyright = '2018-2021, Denis Rosset, Jean-Daniel Bancal and collaborators'
 author = 'Denis Rosset, Jean-Daniel Bancal and collaborators'
 version = Path('../../version.txt').read_text().strip()
 release = version
 html_title = 'RepLAB Applications'
-html_base_url = 'https://replab.github.io/apps/'
+html_base_url = 'https://replab.github.io/applis/'
 
 ##
 ## Extensions
